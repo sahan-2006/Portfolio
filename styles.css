@@ -2233,15 +2233,31 @@ body.dark-theme .navbar {
         margin-bottom: 10px;
     }
 }
-/* Force light theme even in dark mode */
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background: #ffffff !important;
-    color: #111111 !important;
+/* Keep same layout, just scale to mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
 
-  * {
-    background-color: inherit !important;
-    color: inherit !important;
+  /* Scale whole page instead of changing layout */
+  .container, 
+  .projects, 
+  .login-wrapper, 
+  .brand-showcase, 
+  .projects-grid-3d {
+    transform: scale(0.92);
+    transform-origin: top center;
+    width: 100%;
+  }
+
+  /* Prevent elements from overflowing */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce padding slightly so content fits */
+  .container {
+    padding: 0 10px;
   }
 }
