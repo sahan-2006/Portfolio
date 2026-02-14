@@ -2279,3 +2279,40 @@ body.dark-theme .navbar {
   h1 { font-size: 24px; }
   h2 { font-size: 20px; }
 }
+/* FINAL FIX: remove right side white gap on mobile */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Force all sections to stay inside viewport */
+section, .container, .about, .hero, .projects, .skills {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix images/cards overflowing */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix any element with fixed width causing overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile specific hard fix */
+@media (max-width: 768px) {
+  .container,
+  section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* Kill transforms that push layout outside */
+  .tilt, .project-3d-card, .card-3d {
+    transform: none !important;
+  }
+}
