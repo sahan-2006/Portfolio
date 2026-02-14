@@ -2316,36 +2316,3 @@ img, video, iframe {
     transform: none !important;
   }
 }
-/* Fix filter buttons visibility on mobile */
-.skills-filter .filter-btn,
-.projects-filter .filter-btn {
-  background: linear-gradient(135deg, #6a5acd, #7b68ee);
-  color: #fff;
-  border: 0;
-  box-shadow: 0 6px 16px rgba(106, 90, 205, 0.25);
-}
-
-/* Active state */
-.skills-filter .filter-btn.active,
-.projects-filter .filter-btn.active {
-  background: linear-gradient(135deg, #7b68ee, #6a5acd);
-  color: #fff;
-}
-
-/* Mobile layout: wrap buttons properly */
-@media (max-width: 768px) {
-  .skills-filter,
-  .projects-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .skills-filter .filter-btn,
-  .projects-filter .filter-btn {
-    min-width: 110px;
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-}
