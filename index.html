@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | Creative Developer & Problem Solver</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" class="logo-text"><span class="logo-accent">B.</span>S</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    Available for opportunities
+                </div>
+                <p class="hero-greeting">Hello, I'm <span class="greeting-wave">👋</span></p>
+                <h1 class="hero-name">Sahan</h1>
+                <h2 class="hero-title">
+                    <span class="typed-text"></span>
+                    <span class="cursor-typing">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    I craft immersive digital experiences with a focus on front-end development, 
+                    complemented by Python and Java foundations. Turning complex problems into 
+                    elegant, user-centric solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+                <div class="hero-social">
+                    <a href="#" target="_blank" class="social-link github"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-link codepen"><i class="fab fa-codepen"></i></a>
+                    <a href="#" target="_blank" class="social-link dev"><i class="fab fa-dev"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <div class="image-card-3d">
+                        <!-- REPLACE THIS IMAGE WITH YOUR OWN PHOTO -->
+                        <img src="photo.jpeg" alt="Sahan" class="profile-img">
+                        
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element html"><i class="fab fa-html5"></i></div>
+                        <div class="floating-element css"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-element js"><i class="fab fa-js"></i></div>
+                        <div class="floating-element python"><i class="fab fa-python"></i></div>
+                        <div class="floating-element java"><i class="fab fa-java"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about">
+                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-line"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Who I Am</span>
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <div class="underline">
+                    <span class="underline-dot"></span>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="10">
+                    <div class="image-frame-3d">
+                        <!-- REPLACE THIS IMAGE WITH YOUR OWN PHOTO -->
+                        <img src="photo.jpeg" alt="Sahan" class="about-img">
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <h3>Passionate developer creating <span class="gradient-text">digital magic</span></h3>
+                    <p class="about-text">
+                        I'm a Front-End Developer with a strong foundation in Python and Java. 
+                        My journey in tech began 3 years ago, and since then I've been on an exciting 
+                        path of continuous learning and creation. I believe in writing clean, 
+                        maintainable code that not only works but also inspires.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Fast & Performant</h4>
+                                <p>Optimized code for lightning-fast experiences</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Responsive Design</h4>
+                                <p>Flawless experience on any device</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Clean Code</h4>
+                                <p>Well-documented, maintainable solutions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-info-grid">
+                        <div class="info-card">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Name</h4>
+                                <p>Sahan</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Kadapa</h4>
+                                <p>Andhra Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Gmail</h4>
+                                <p>bsahanlakshmireddy9@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Website</h4>
+                                <p>www.sahan.dev</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hire Me</span>
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline" download>
+                            <span>Download CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Expertise</span>
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <div class="underline">
+                    <span class="underline-dot"></span>
+                </div>
+                <p class="section-description">I've worked with a variety of technologies and tools. Here's my skill stack:</p>
+            </div>
+
+            <div class="skills-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Front-End</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                
+            </div>
+
+            <div class="skills-3d-container">
+                <!-- Front-End Skills -->
+                <div class="skill-3d-card" data-category="frontend" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <h3>HTML5</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                            <span class="percentage">95%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>Semantic HTML, Accessibility, SEO-friendly structure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-3d-card" data-category="frontend" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <h3>CSS3/SCSS</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>Flexbox, Grid, Animations, Responsive Design, Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-3d-card" data-category="frontend" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fab fa-js skill-icon"></i>
+                            <h3>JavaScript</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>ES6+, DOM Manipulation, Async/Await, Fetch API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-3d-card" data-category="python" data-aos="zoom-in-up" data-aos-delay="500">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fab fa-python skill-icon"></i>
+                            <h3>Python</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="percentage">75%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>Basics, OOP, Data Structures, File Handling, Flask</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-3d-card" data-category="java" data-aos="zoom-in-up" data-aos-delay="600">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fab fa-java skill-icon"></i>
+                            <h3>Java</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 70%"></div>
+                            </div>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>Core Java, OOP, Collections, Exception Handling</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="skill-3d-card" data-category="tools" data-aos="zoom-in-up" data-aos-delay="800">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h3>SQL</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 65%"></div>
+                            </div>
+                            <span class="percentage">65%</span>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>MySQL, SQLite, Basic Queries, Joins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-subtitle">My Portfolio</span>
+      <h2>Featured <span class="gradient-text">Projects</span></h2>
+      <div class="underline">
+        <span class="underline-dot"></span>
+      </div>
+      <p class="section-description">Here are some of my best works that showcase my skills and creativity</p>
+    </div>
+
+    <div class="projects-filter" data-aos="fade-up">
+      <button class="filter-btn active" data-project-filter="all">All</button>
+      <button class="filter-btn" data-project-filter="frontend">Front-End</button>
+    </div>
+
+    <div class="projects-grid-3d">
+      <!-- Project 1 - OrganicMart (Front-End) -->
+      <div class="project-3d-card" data-project-category="frontend" data-aos="flip-left" data-aos-delay="100">
+        <div class="project-3d-inner">
+          <div class="project-3d-front">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200" alt="OrganicMart E-Commerce">
+              <div class="project-overlay">
+                <span class="project-category">Front-End</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>OrganicMart – E-Commerce & Admin Panel</h3>
+              <div class="project-tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-3d-back">
+            <h3>OrganicMart – E-Commerce & Admin Panel</h3>
+            <p>
+              Built a complete e-commerce frontend with products page, filters, cart UI, checkout UI, 
+              and a professional admin dashboard for product and category management.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Products Page + Filters</span>
+              <span><i class="fas fa-check"></i> Cart & Checkout UI</span>
+              <span><i class="fas fa-check"></i> Admin Panel (CRUD)</span>
+              <span><i class="fas fa-check"></i> Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" target="_blank" class="project-link live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 - AgriTech (Front-End Dashboard) -->
+      <div class="project-3d-card" data-project-category="frontend" data-aos="flip-left" data-aos-delay="200">
+        <div class="project-3d-inner">
+          <div class="project-3d-front">
+            <div class="project-image">
+              <img src="https://img.freepik.com/premium-photo/smart-farming-iot-technology-future-agriculture-with-ai-data-analytics_591055-1728.jpg?semt=ais_user_personalization&w=740&q=80" alt="AgriTech Dashboard">
+              <div class="project-overlay">
+                <span class="project-category">Front-End</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>AgriTech – Intelligent Farming Dashboard</h3>
+              <div class="project-tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-3d-back">
+            <h3>AgriTech – Intelligent Farming Dashboard</h3>
+            <p>
+              Built a responsive farming dashboard UI with weather, soil health, crop monitoring, 
+              and alerts for low moisture and pest detection.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Weather & Soil Cards</span>
+              <span><i class="fas fa-check"></i> Crop Health UI</span>
+              <span><i class="fas fa-check"></i> Alerts UI</span>
+              <span><i class="fas fa-check"></i> Sidebar Navigation</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" target="_blank" class="project-link live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                <div class="underline">
+                    <span class="underline-dot"></span>
+                </div>
+                <p class="section-description">Have a project in mind? I'd love to hear about it</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-3d" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-info-header">
+                            <h3>Contact Information</h3>
+                            <p>Feel free to reach out anytime</p>
+                        </div>
+
+                        <div class="contact-info-items">
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Location</h4>
+                                    <p>Kadapa ,Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Gmail</h4>
+                                    <p>bsahanlakshmiredyy9@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Phone</h4>
+                                    <p>+91 9390329606</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Working Hours</h4>
+                                    <p>Mon-Fri: 9AM - 6PM PST</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-3d">
+                            <a href="#" class="social-3d github"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-3d linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-3d twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-3d codepen"><i class="fab fa-codepen"></i></a>
+                            <a href="#" class="social-3d dev"><i class="fab fa-dev"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-3d" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form-card">
+                        <h3>Send Me a Message</h3>
+                        
+                        <div class="form-group-3d">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="form-group-3d">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="form-group-3d">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="form-group-3d">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">B<span>.</span>S</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sahan. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Sahan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
