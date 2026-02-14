@@ -2316,42 +2316,43 @@ img, video, iframe {
     transform: none !important;
   }
 }
-/* FINAL FIX: Make filter buttons always visible */
-.skills-filter .filter-btn,
-.projects-filter .filter-btn,
-.filter-btn {
+/* ===== FINAL FORCE FIX: FILTER BUTTONS VISIBILITY ===== */
+button.filter-btn {
   background: linear-gradient(135deg, #667eea, #764ba2) !important;
   color: #ffffff !important;
   border: 0 !important;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35) !important;
+  box-shadow: 0 10px 22px rgba(102, 126, 234, 0.45) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  mix-blend-mode: normal !important;
+  background-clip: padding-box !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
-/* Active / Hover state */
-.skills-filter .filter-btn.active,
-.projects-filter .filter-btn.active,
-.filter-btn.active,
-.skills-filter .filter-btn:hover,
-.projects-filter .filter-btn:hover,
-.filter-btn:hover {
-  background: linear-gradient(135deg, #764ba2, #667eea) !important;
+button.filter-btn * {
+  background: transparent !important;
   color: #ffffff !important;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.45) !important;
 }
 
-/* Mobile layout: wrap + spacing */
+/* Active + Hover */
+button.filter-btn:hover,
+button.filter-btn.active {
+  background: linear-gradient(135deg, #764ba2, #667eea) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(102, 126, 234, 0.55) !important;
+}
+
+/* Mobile wrap + spacing */
 @media (max-width: 768px) {
   .skills-filter,
   .projects-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center !important;
   }
 
-  .skills-filter .filter-btn,
-  .projects-filter .filter-btn,
-  .filter-btn {
+  button.filter-btn {
     min-width: 120px;
     padding: 10px 16px;
     font-size: 14px;
