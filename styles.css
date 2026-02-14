@@ -2233,3 +2233,15 @@ body.dark-theme .navbar {
         margin-bottom: 10px;
     }
 }
+/* Force light theme even in dark mode */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  * {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+}
