@@ -2233,31 +2233,49 @@ body.dark-theme .navbar {
         margin-bottom: 10px;
     }
 }
-/* Keep same layout, just scale to mobile */
+/* FINAL MOBILE FIT – same layout, no break */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
 
-  /* Scale whole page instead of changing layout */
-  .container, 
-  .projects, 
-  .login-wrapper, 
-  .brand-showcase, 
-  .projects-grid-3d {
-    transform: scale(0.92);
-    transform-origin: top center;
-    width: 100%;
+  /* Reduce side gaps so content fits */
+  .container,
+  section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 
-  /* Prevent elements from overflowing */
-  img, video, iframe {
+  /* Make cards full width without changing design */
+  .info-card,
+  .contact-card,
+  .project-3d-card,
+  .skill-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Buttons fit inside screen */
+  .hire-btn,
+  .download-btn,
+  .send-btn,
+  .project-link,
+  button {
     max-width: 100%;
-    height: auto;
   }
 
-  /* Reduce padding slightly so content fits */
-  .container {
-    padding: 0 10px;
+  /* Prevent text white overlay issue on mobile */
+  button, .hire-btn, .download-btn {
+    background-clip: padding-box;
+    -webkit-text-fill-color: #fff !important;
   }
+
+  /* Images/icons fit */
+  img, svg, i {
+    max-width: 100%;
+  }
+
+  /* Slight font scale (design same, just fit) */
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
 }
